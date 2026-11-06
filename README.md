@@ -6,62 +6,6 @@ AI Agent 工程师 | LLM 应用开发 | RAG 与多智能体系统
 
 🎯 核心方向：Agent 编排 · 状态机设计 · RAG 优化 · 结构化输出治理 · 人机协同工作流
 
-🛠️ 技术栈
-
-Agent 与 LLM
-
-框架：LangGraph (StateGraph/Checkpoint/HITL) · LangChain · ReAct · Plan-and-Execute
-LLM 工程化：提示词工程（分层/Few-shot/CoT）· 工具调用 · 结构化输出 · Bad case 分析与迭代
-
-检索与 RAG
-
-向量数据库：Milvus · Qdrant · OpenAI Vector Stores
-技术方案：查询重写 · 混合检索（稠密+稀疏）· RRF · Rerank · 召回门控与过滤
-
-记忆与上下文
-
-会话级滑动窗口 · Mem0 长期记忆 · 状态机动态 Prompt · 摘要压缩 · 语义召回（Top-k）
-
-后端与数据
-
-Python · FastAPI (异步 IO) · Pydantic v2 · SQLAlchemy/SQLModel async
-MySQL · Redis (Cache-Aside/分级 TTL) · Celery · Docker
-
-可观测性
-
-Langfuse（全链路追踪）· Prometheus + Grafana · structlog · tenacity
-
-其他能力
-
-CV 与推理部署：YOLO/MMDet/SAM · ONNX+TensorRT
-AI 辅助开发：Cursor · Claude · Subagent 模式
-熟悉平台：Dify · Coze
-🚀 项目经验
-
-多 Agent 智能客服平台（生产级已上线）
-
-基于 LangGraph StateGraph 编排 8 阶段销售旅程 + MySQL Checkpoint 持久化
-双轨并行工作流（回复生成 + 字段抽取）+ 冲突消解机制
-配置化 Agent 运行时（零硬编码，支撑多品牌/多渠道扩展）
-接入 Langfuse 全链路追踪，支撑提示词版本迭代
-
-Tagminder 人脉关系管理平台
-
-多场景 Agent 工作流（意图识别、智能记录、人脉推荐）
-会话级记忆 + 状态机 + 动态 Prompt 加载
-混合检索（稠密+稀疏+RRF）+ qwen3-rerank → 意图识别准确率 90%+
-
-Usay 智能穿戴健康助手
-
-文本+语音健康数据问答，集成 Mem0 长期记忆
-Token 预算动态分配（历史/健康数据/记忆片段）
-并行上下文融合（对话历史 + 记忆 + 健康 API）
-📊 技术特点
-🏗️ 生产级经验：多 Agent 客服编排、CRM、健康科技领域落地经验
-🔧 工程化思维：可观测性优先 · 结构化输出治理 · 状态持久化 · 人机协同
-📈 RAG 优化：查询重写 → 混合召回 → Rerank → 门控过滤
-🧠 提示词工程：7 层分层 Prompt · Few-shot/CoT · JSON Schema 校验
-📫 联系方式
 💡 感兴趣的方向
 🤝 LLM Agent 框架和 RAG 系统的技术协作
 💬 探讨 Agent 编排模式与生产部署最佳实践
